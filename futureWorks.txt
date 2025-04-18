@@ -1,0 +1,6 @@
+1. Add a way to create bookings - done
+2. Add a away to edit bookings 
+3. Checkin and checkout times
+4. Cabins don't have a fixed price throughout the year
+5. Restaurant for the hotel, whenever user clicks it, user is redirected to a new page of Restaurant
+6. whenever user checkouts a PDF invoice is mailed to them
