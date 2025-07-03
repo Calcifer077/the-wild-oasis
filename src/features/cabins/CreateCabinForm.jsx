@@ -76,6 +76,9 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         {
           onSuccess: () => {
             reset();
+
+            // Below we are optinal chainig a method call. If 'onCloseModal' doesn't exist it will not call it.
+            // We are doing so because we don't know if the form was created using modal or not.
             onCloseModal?.();
           },
         }
@@ -86,6 +89,9 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         {
           onSuccess: () => {
             reset();
+
+            // Below we are optinal chainig a method call. If 'onCloseModal' doesn't exist it will not call it.
+            // We are doing so because we don't know if the form was created using modal or not.
             onCloseModal?.();
           },
         }
@@ -202,6 +208,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
           variation="secondary"
           type="reset"
           // Below we are optinal chainig a method call. If 'onCloseModal' doesn't exist it will not call it.
+          // We are doing so because we don't know if the form was created using modal or not.
           onClick={() => onCloseModal?.()}
         >
           Cancel
